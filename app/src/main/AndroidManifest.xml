@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AluraAndroidKotlin" >
 
 <!--        configurando minha activiy-->
-        <activity android:name=".MainActivity"
+        <activity android:name=".ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

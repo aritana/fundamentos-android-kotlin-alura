@@ -1,10 +1,13 @@
-package com.example.aluraandroidkotlin
+package com.example.aluraandroidkotlin.ui.activity
+
 
 import android.app.Activity
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
+import com.example.aluraandroidkotlin.R
+import com.example.aluraandroidkotlin.ui.recyclerview.adapter.ListaProdutosAdapter
 
 //configurar tambem no manifest
 class MainActivity : Activity() {
@@ -26,6 +29,11 @@ class MainActivity : Activity() {
 
         val valor = findViewById<TextView>(R.id.valor)
         valor.text = "19.90"
+
+        //encontrar recycler view
+        var recyclerView =  findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.adapter = ListaProdutosAdapter()
+
 
     }
 }
