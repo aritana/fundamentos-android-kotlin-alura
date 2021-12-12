@@ -13,8 +13,6 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         Toast.makeText(this, "Bem vindo(a)!!", Toast.LENGTH_SHORT).show()
 
-    //adidcionando uma view
-        val view = View(this)//this é a propria activiy
-        setContentView(view)
+        setContentView(R.layout.activity_main)
     }
 }
