@@ -17,7 +17,7 @@ class MainActivity : Activity() {
 
         //cada text view é uma view
         //para acessar uma vie, utilizamos o comando abaixo
-
+        //chamaos de 'bind' om layout
         val nome = findViewById<TextView>(R.id.nome)
         nome.text = "Cesta de Frutas"
 
